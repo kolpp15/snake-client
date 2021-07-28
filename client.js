@@ -10,6 +10,13 @@ const connect = function() {
   conn.on("connect", () => {
     console.log('Successfully connected to game server');
     conn.write("Name: SBH");
+
+    // for (let i = 0; i < 100; i++) {
+    //   setTimeout(() => {
+    //     conn.write("Move: up");
+    //     conn.write("Move: left");
+    //   }, 500 * i);
+    // }
   });
 
   // interpret incoming data as text

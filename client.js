@@ -8,7 +8,8 @@ const connect = function() {
   });
 
   conn.on("connect", () => {
-    console.log('you are now connected.');
+    console.log('Successfully connected to game server');
+    conn.write("Name: SBH");
   });
 
   // interpret incoming data as text
